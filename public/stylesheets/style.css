@@ -1,0 +1,118 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+body {
+line-height: 1;
+color: black;
+background: white;
+}
+ol, ul {
+list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+/*my css rules*/
+#wrapper{
+    width:75%;
+    margin:0 auto;
+    text-align:center;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:1em;
+}
+#header{
+    height:120px;
+    border-bottom:1px dashed #DEDEDE;
+}
+#header > h1{
+    padding:45px;
+}
+#header > h1:first-letter{
+    text-transform:capitalize;
+}
+#wrapper > #header{
+    font-size:200%;
+    color:#C7C4C4;
+}
+#header .domen_root{
+    color:#A60021;
+}
+#header .domen_country{
+    color:#797674;
+}
+#menu{
+    height:30px;
+    border-bottom:1px dashed #DEDEDE;
+    padding-top:12px;
+    font-size:18px;
+    font-family:Arial,Tahoma, sans-serif;
+}
+#menu ul li{
+    display:inline;
+    margin-right:15px;
+}
+#menu a{
+    text-decoration:none;
+    color:#717171;
+}
+#menu a:hover{
+    color:#B6B4B4;
+}
+#content{
+    margin:10px 0;
+    padding:15px;
+    text-align:justify;
+    font-size:14px;
+    line-height:1.5em;
+}
+#footer{
+    height:60px;
+}
+.copyright{
+    padding:5px;
+    margin-top:20;
+    display:inline;
+    background:#A2A2A2;
+    color:#fff;
+    opacity:0.4;
+    font-size:11px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;   
+}
+.copyright:hover{
+    opacity:0.6;
+}
