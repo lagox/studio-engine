@@ -7,5 +7,4 @@ class PagesController < ApplicationController
   def contacts
     @title = "Контакты"
   end
-
 end

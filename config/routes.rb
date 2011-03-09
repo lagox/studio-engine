@@ -1,4 +1,14 @@
 Studio::Application.routes.draw do
+  resources :ourprojects
+
+  get "projects/index"
+
+  get "projects/new"
+
+  get "projects/edit"
+
+  get "projects/show"
+
   #pages
   match "contacts" => "pages#contacts"
 
