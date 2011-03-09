@@ -1,6 +1,6 @@
 Studio::Application.routes.draw do
-  get "pages/index"
-  get "pages/contacts"
+  #pages
+  match "contacts" => "pages#contacts"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

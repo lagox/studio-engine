@@ -55,7 +55,7 @@ quotes: "" "";
 }
 #header{
     height:120px;
-    border-bottom:1px dashed #DEDEDE;
+    /*border-bottom:1px dashed #DEDEDE;*/
 }
 #header > h1{
     padding:45px;
@@ -75,7 +75,7 @@ quotes: "" "";
 }
 #menu{
     height:30px;
-    border-bottom:1px dashed #DEDEDE;
+    /*border-bottom:1px dashed #DEDEDE;*/
     padding-top:12px;
     font-size:18px;
     font-family:Arial,Tahoma, sans-serif;
@@ -115,4 +115,15 @@ quotes: "" "";
 }
 .copyright:hover{
     opacity:0.6;
+}
+#content a{
+    color:#717171;
+}
+#content a:hover{
+    color:#B6B4B4;
+}
+#content h1{
+    font-size:18px;
+    padding:10px 0px;
+    color:#B6B4B4;
 }
