@@ -1,27 +1,14 @@
-<h1>Listing ourprojects</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Url</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<h1>Проекты</h1>
 <% @ourprojects.each do |ourproject| %>
-  <tr>
-    <td><%= ourproject.title %></td>
-    <td><%= ourproject.url %></td>
-    <td><%= ourproject.description %></td>
-    <td><%= link_to 'Show', ourproject %></td>
-    <td><%= link_to 'Edit', edit_ourproject_path(ourproject) %></td>
-    <td><%= link_to 'Destroy', ourproject, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <div class="project">
+    <div class="project_title"><%= ourproject.title %></div>
+    <div class="project_url"><%= link_to slice_http(ourproject.url), ourproject.url %></div>
+    <div class="project_description"><%= ourproject.description %></div>
+    <div class="project_actions">
+      <%= link_to 'Показать', ourproject %> | 
+      <%= link_to 'Редактировать', edit_ourproject_path(ourproject) %> | 
+      <%= link_to 'Удалить', ourproject, :confirm => 'Вы уверены?', :method => :delete %>
+    </div>
+  </div>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Ourproject', new_ourproject_path %>
+<%= link_to 'Новый проект', new_ourproject_path %>

@@ -1,9 +1,11 @@
+#encoding:utf-8
 class OurprojectsController < ApplicationController
   # GET /ourprojects
   # GET /ourprojects.xml
   def index
     @ourprojects = Ourproject.all
-
+    @title = "Наши проекты"
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @ourprojects }
@@ -14,7 +16,8 @@ class OurprojectsController < ApplicationController
   # GET /ourprojects/1.xml
   def show
     @ourproject = Ourproject.find(params[:id])
-
+    @title = @ourproject.title
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @ourproject }
@@ -41,10 +44,10 @@ class OurprojectsController < ApplicationController
   # POST /ourprojects.xml
   def create
     @ourproject = Ourproject.new(params[:ourproject])
-
+    
     respond_to do |format|
       if @ourproject.save
-        format.html { redirect_to(@ourproject, :notice => 'Ourproject was successfully created.') }
+        format.html { redirect_to(@ourproject, :notice => 'Успешно добавлено') }
         format.xml  { render :xml => @ourproject, :status => :created, :location => @ourproject }
       else
         format.html { render :action => "new" }
@@ -60,7 +63,7 @@ class OurprojectsController < ApplicationController
 
     respond_to do |format|
       if @ourproject.update_attributes(params[:ourproject])
-        format.html { redirect_to(@ourproject, :notice => 'Ourproject was successfully updated.') }
+        format.html { redirect_to(@ourproject, :notice => 'Успешно обновлено.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
