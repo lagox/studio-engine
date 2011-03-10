@@ -1,4 +1,4 @@
-<h1>Проекты</h1>
+<h1 id="projecth1">Проекты</h1>
 <% @ourprojects.each do |ourproject| %>
   <div class="project">
     <div class="project_title"><%= ourproject.title %></div>
@@ -11,4 +11,4 @@
     </div>
   </div>
 <% end %>
-<%= link_to 'Новый проект', new_ourproject_path %>
+<%= button_to 'Новый проект', new_ourproject_path, :method => :get %>

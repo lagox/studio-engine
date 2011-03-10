@@ -122,11 +122,59 @@ quotes: "" "";
 #content a:hover{
     color:#B6B4B4;
 }
+h1{
+    color:#B6B4B4;
+    padding:10px 0px;
+}
 #content h1{
     font-size:18px;
-    padding:10px 0px;
-    color:#B6B4B4;
+    font-family:Helvetica,Arial,sans-serif;
+    letter-spacing:0.5px;    
 }
 /*projects*/
-
-
+.field label{
+    font-weight:bold;
+    color:#717171;
+}
+#notice{
+    background:#C9C9C9;
+    color:#fff;
+    font-size:16px;
+    margin:0 auto;
+    text-align:center;
+    width:300px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+#projecth1{
+    color:#ffffff;
+    background:#C9C9C9;
+    font-size:18px;
+    margin:0 auto;
+    padding:5px;
+    text-align:center;
+    width:300px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;    
+}
+.project{
+    margin:15px 0px;
+}
+.project_title{
+    font-size:18px;
+    margin-bottom:5px;
+}
+.project_url{
+    background:url("/images/www_page.png");
+    background-repeat:no-repeat;
+    padding-left:20px;
+    margin:3px 0px;
+}
+.project_description{
+    margin:3px 0;
+}
+.project_actions{
+    font-size:11px;
+}
