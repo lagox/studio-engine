@@ -6,7 +6,8 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
+gem "will_paginate", "~> 3.0.pre2"
+gem "paperclip", "~> 2.3"
 # Use unicorn as the web server
 # gem 'unicorn'
 
