@@ -1,11 +1,13 @@
 <%= form_for(@ourproject) do |f| %>
   <% if @ourproject.errors.any? %>
-      <h2><%= pluralize(@ourproject.errors.count, "ошибки") %> prohibited this ourproject from being saved:</h2>
+    <div class="errors_msg">
+      <h2>Количество ошибок: <%= @ourproject.errors.count %></h2>
       <ul>
       <% @ourproject.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
+    </div>
   <% end %>
 
   <div class="field">
