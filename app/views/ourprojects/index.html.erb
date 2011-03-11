@@ -15,3 +15,6 @@
   </div>
 <% end %>
 <%= button_to 'Новый проект', new_ourproject_path, :method => :get %>
+<div class="paginate">
+  <%= will_paginate(@ourprojects) %>
+</div>

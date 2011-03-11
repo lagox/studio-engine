@@ -3,7 +3,7 @@ class OurprojectsController < ApplicationController
   # GET /ourprojects
   # GET /ourprojects.xml
   def index
-    @ourprojects = Ourproject.all
+    @ourprojects = Ourproject.paginate :page => params[:page]
     @title = "Наши проекты"
     
     respond_to do |format|
