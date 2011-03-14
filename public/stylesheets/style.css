@@ -163,9 +163,14 @@ h1{
 .project{
     margin:15px 0px;
 }
-.project_title{
+.project_title a{
     font-size:18px;
     margin-bottom:5px;
+    color:#000;
+    text-decoration:none;
+}
+.project_title a:hover{
+    color:#717171;
 }
 .project_url{
     background:url("/images/www_page.png");
@@ -187,7 +192,7 @@ h1{
 /*paginate*/
 .paginate{
     text-align:center;
-    margin:10px 0px;
+    margin:30px 0px 10px 0px;
     
 }
 .paginate a{

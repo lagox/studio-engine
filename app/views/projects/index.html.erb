@@ -4,7 +4,7 @@
 <h1 id="projecth1">Проекты</h1>
 <% @projects.each do |project| %>
   <div class="project">
-    <div class="project_title"><%= project.title %></div>
+    <div class="project_title"><%= link_to project.title, project_path(project) %></div>
     <div class="project_url"><%= link_to slice_http(project.url), project.url %></div>
     <div class="project_description"><%= project.description %></div>
   </div>
