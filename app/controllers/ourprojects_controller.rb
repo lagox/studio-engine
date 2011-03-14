@@ -15,12 +15,16 @@ class OurprojectsController < ApplicationController
   # GET /ourprojects/1
   # GET /ourprojects/1.xml
   def show
-    @ourproject = Ourproject.find(params[:id])
-    @title = @ourproject.title
-    
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @ourproject }
+    begin
+      @ourproject = Ourproject.find(params[:id])
+      @title = @ourproject.title
+      respond_to do |format|
+        format.html # show.html.erb
+        format.xml  { render :xml => @ourproject }
+      end
+    rescue ActiveRecord::RecordNotFound
+      flash[:notice] = "Такой записи не существует"
+      redirect_to ourprojects_path
     end
   end
 

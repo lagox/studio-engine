@@ -2,7 +2,7 @@
 module ApplicationHelper
   #Data about site
   def studio_data
-    { :name => "pubrica.kz", :description => "Веб-студия", :year => "2011" }
+    { :name => "Remeli.kz", :description => "Веб-студия", :year => "2011" }
   end
   
   #title site

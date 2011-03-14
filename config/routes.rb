@@ -1,17 +1,16 @@
 Studio::Application.routes.draw do
-  resources :ourprojects
-
-  get "projects/index"
-
-  get "projects/new"
-
-  get "projects/edit"
-
-  get "projects/show"
-
+  
+  #projects
+  match "projects/page/:page" => "projects#index"
+  resources :projects, :only => [:index, :show]
   #pages
   match "contacts" => "pages#contacts"
-
+  
+  #resources
+  resources :ourprojects
+  
+  #will_paginate
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
