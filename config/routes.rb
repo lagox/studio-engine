@@ -1,5 +1,7 @@
 Studio::Application.routes.draw do
   
+  resources :ourportfolios
+
   #projects
   match "projects/page/:page" => "projects#index"
   resources :projects, :only => [:index, :show]
