@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315181259) do
+ActiveRecord::Schema.define(:version => 20110315182207) do
 
   create_table "ourportfolios", :force => true do |t|
     t.string   "title"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(:version => 20110315181259) do
     t.text     "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "screen_file_name"
+    t.string   "screen_content_type"
+    t.integer  "screen_file_size"
+    t.datetime "screen_updated_at"
   end
 
   create_table "ourprojects", :force => true do |t|

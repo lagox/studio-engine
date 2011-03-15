@@ -1,4 +1,4 @@
-<%= form_for(@ourportfolio) do |f| %>
+<%= form_for @ourportfolio, :html => { :multipart => true } do |f| %>
   <% if @ourportfolio.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@ourportfolio.errors.count, "error") %> prohibited this ourportfolio from being saved:</h2>
@@ -18,6 +18,10 @@
   <div class="field">
     <%= f.label :url %><br />
     <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label "Скриншот" %>
+    <%= f.file_field :screen %>
   </div>
   <div class="field">
     <%= f.label :desc %><br />

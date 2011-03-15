@@ -9,7 +9,9 @@
   <b>Url:</b>
   <%= @ourportfolio.url %>
 </p>
-
+<p>
+  <%= image_tag @ourportfolio.screen.url(:thumb) %>
+</p>
 <p>
   <b>Desc:</b>
   <%= @ourportfolio.desc %>
