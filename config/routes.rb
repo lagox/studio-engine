@@ -1,10 +1,20 @@
 Studio::Application.routes.draw do
   
+  get "jobs/index"
+
+  get "jobs/show"
+
+  get "portfolio/index"
+
+  get "portfolio/show"
+
   resources :ourportfolios
 
   #projects
   match "projects/page/:page" => "projects#index"
   resources :projects, :only => [:index, :show]
+  
+  
   #pages
   match "contacts" => "pages#contacts"
   
