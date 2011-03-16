@@ -1,22 +1,20 @@
+<% if notice %>
 <p id="notice"><%= notice %></p>
+<% end %>
 
-<p>
-  <b>Title:</b>
-  <%= @ourportfolio.title %>
-</p>
+<div class="portfolio_content">
+      <h1 id="projecth1">
+        <%= @ourportfolio.title %>
+      </h1>
+      <div class="portfolio_thumb">
+        <%= image_tag @ourportfolio.screen.url(:medium) %>
+      </div>
+      <div class="portfolio_description">
+        <%= @ourportfolio.desc %>
+      </div>
+      <div class="project_actions">
+        <%= link_to 'Редактировать', edit_ourportfolio_path(@ourportfolio) %> |
+        <%= link_to 'Назад', ourportfolios_path %>
+      </div>
+</div>
 
-<p>
-  <b>Url:</b>
-  <%= @ourportfolio.url %>
-</p>
-<p>
-  <%= image_tag @ourportfolio.screen.url(:thumb) %>
-</p>
-<p>
-  <b>Desc:</b>
-  <%= @ourportfolio.desc %>
-</p>
-
-
-<%= link_to 'Edit', edit_ourportfolio_path(@ourportfolio) %> |
-<%= link_to 'Back', ourportfolios_path %>
