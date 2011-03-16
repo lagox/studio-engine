@@ -1,2 +1,16 @@
-<h1>Jobs#show</h1>
-<p>Find me in app/views/jobs/show.html.erb</p>
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1 id="projecth1"><%= @job.title %></h1>
+<div class="portfolio_content">
+<div class="portfolio_desc">
+  <%= @job.desc %>
+</div>
+<div class="portfolio_url">
+  <%= link_to slice_http(@job.url), @job.url  %>
+</div>
+<%= image_tag @job.screen.url(:medium) %>
+<div class="portfolio_dateadd">
+Дата добавления: <%= @job.created_at.strftime("%d.%m.%Y") %>
+</div>
+</div>

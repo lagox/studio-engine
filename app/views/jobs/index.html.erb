@@ -5,8 +5,10 @@
 <div class="portfolio_content">
   <% @jobs.each do |j| %>
     <div class="portfolio">
-      <div class="portfolio_title"><%= j.title %></div>
-      <div class="portfolio_thumb"><%= image_tag j.screen.url(:thumb) %></div>
+      <div class="portfolio_title"><%= link_to j.title, job_path(j) %></div>
+      <div class="portfolio_thumb">
+        <%= link_to image_tag(j.screen.url(:thumb)), job_path(j) %>
+      </div>
     </div>
   <% end %>
 </div>

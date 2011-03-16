@@ -289,3 +289,32 @@ h1{
     color:#717171;
     margin-bottom:10px;
 }
+.portfolio_title a{
+    text-decoration:none;
+}
+.portfolio_thumb a{
+    border:0;
+}
+.portfolio_desc{
+    font-size:11px;
+    margin-bottom:10px;
+}
+.portfolio_url{
+    font-size:11px;
+}
+.portfolio_dateadd{
+    font-size:11px;
+    color:#717171;
+    margin-top:11px;
+}
+/*404*/
+#error_page{
+    text-align:center;
+    font-size:20px;
+    margin-top:100px;
+}
+.error_page_text{
+    margin-top:50px;
+    font-family:Tahoma;
+    font-size:25px;
+}

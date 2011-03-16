@@ -14,6 +14,9 @@ Studio::Application.routes.draw do
   #resources
   resources :ourprojects
   resources :ourportfolios
+  
+  #404
+  match '*a', :to => 'errors#routing'
     
   # The priority is based upon order of creation:
   # first created -> highest priority.
