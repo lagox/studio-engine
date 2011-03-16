@@ -1,9 +1,11 @@
+#encoding:utf-8
 class OurportfoliosController < ApplicationController
   # GET /ourportfolios
   # GET /ourportfolios.xml
   def index
-    @ourportfolios = Ourportfolio.all
-
+    @title = "Наше портфолио"
+    @ourportfolios = Ourportfolio.paginate :page => params[:page]
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @ourportfolios }

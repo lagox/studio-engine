@@ -1,13 +1,21 @@
-<% @ourportfolios.each do |p| %>
-  <div class="portfolio">
-    <div class="portfolio_title"><%= p.title %></div>
-    <div class="portfolio_thumb"><%= image_tag p.screen.url(:thumb) %></div>
-    <div class="project_actions">
-      <%= link_to 'Показать', p %>
-      <%= link_to 'Редактировать', edit_ourportfolio_path(p) %>
-      <%= link_to 'Удалить', p, :confirm => "Вы уверены", :method => :delete %>
-    </div>
-  </div>
+<% if notice %>
+<p id="notice"><%= notice %></p>
 <% end %>
-
+<h1 id="projecth1">Наше портфолио</h1>
+<div class="portfolio_content">
+  <% @ourportfolios.each do |p| %>
+    <div class="portfolio">
+      <div class="portfolio_title"><%= p.title %></div>
+      <div class="portfolio_thumb"><%= image_tag p.screen.url(:thumb) %></div>
+      <div class="project_actions">
+        <%= link_to 'Показать', p %>
+        <%= link_to 'Редактировать', edit_ourportfolio_path(p) %>
+        <%= link_to 'Удалить', p, :confirm => "Вы уверены?", :method => :delete %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="portfolio_paginate">
+  <%= will_paginate @ourportfolios %>
+</div>
 <%= button_to 'Новый проект', new_ourportfolio_path, :method => :get %>
