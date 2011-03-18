@@ -1,2 +1,18 @@
-<h1>Admin#index</h1>
-<p>Find me in app/views/admin/index.html.erb</p>
+<h1 id="projecth1">Админка</h1>
+<div class="admin_url">
+  <p><%= link_to 'Проекты', ourprojects_path %></p>
+  <p><%= link_to 'Портфолио', ourportfolios_path %></p>
+  <p><%= link_to 'Пользователи', users_path %></p>
+</div>
+<div class="admin_actions">
+  <p><%= button_to "Добавить проект", new_ourproject_path, :method => :get %></p>
+  <p><%= button_to "Добавить работу", new_ourportfolio_path, :method => :get %></p>
+  <p><%= button_to "Добавить пользователя", new_user_path, :method => :get %></p>
+</div>
+<div class="admin_footer">
+  <div class="admin_profile">
+    <p>
+    <%= link_to 'Выйти', logout_url, :confirm => "Вы уверены?", :method => :delete %>
+    </p>
+  </div>
+</div>

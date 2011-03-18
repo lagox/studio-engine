@@ -322,3 +322,17 @@ h1{
 .admins{
     margin-bottom:10px;
 }
+.admin_url{
+    float:left;
+    padding:10px;    
+}
+.admin_actions{
+    float:left;
+    padding:10px;
+}
+.admin_footer{
+    clear:both;
+}
+.admin_profile{
+    padding:20px;
+}

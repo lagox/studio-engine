@@ -1,5 +1,7 @@
 #encoding:utf-8
 class OurprojectsController < ApplicationController
+  before_filter :authorize
+
   # GET /ourprojects
   # GET /ourprojects.xml
   def index

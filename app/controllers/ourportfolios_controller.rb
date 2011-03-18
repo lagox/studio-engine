@@ -1,5 +1,7 @@
 #encoding:utf-8
 class OurportfoliosController < ApplicationController
+  before_filter :authorize
+
   # GET /ourportfolios
   # GET /ourportfolios.xml
   def index
