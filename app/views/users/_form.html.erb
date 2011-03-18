@@ -1,0 +1,30 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@users.errors.count, "error") %>
+          prohobited this user from being saved:
+      </h2>
+      <ul>
+        <% @user.errors.full_messaged.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div>
+    <%= f.label "Логин: " %>
+    <%= f.text_field :name, :size => 20 %>
+  </div>
+  <div>
+    <%= f.label "Пароль: " %>
+    <%= f.password_field :password, :size => 20 %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation, 'Повторите пароль:' %>
+    <%= f.password_field :password_confirmation, :size => 20 %>
+  </div>
+  <div>
+    <%= f.submit 'Создать' %>
+  </div>
+<% end %>

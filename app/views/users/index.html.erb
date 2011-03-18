@@ -1,0 +1,17 @@
+<h1>Админы:</h1>
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<% @users.each do |user| %>
+  <div class="admins">
+    <div class="admin_name">Имя: <%= user.name %></div>
+    <div class="project_actions">
+    <%= link_to 'Показать', user %> | 
+    <%= link_to 'Редактировать', edit_user_path(user) %>
+    <%= link_to 'Удалить', user ,:confirm => "Вы действительно хотите удалить?", :method => :delete %>
+    </div>
+  </div>
+<% end %>
+
+<%= button_to "Новый пользователь", new_user_path, :method => :get %>

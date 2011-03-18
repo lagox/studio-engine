@@ -1,0 +1,16 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+<p>
+  <b>Имя:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Хэш пароля:</b>
+  <%= @user.hashed_password %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_user_path(@user) %> |
+<%= link_to 'Назад', users_path %>
