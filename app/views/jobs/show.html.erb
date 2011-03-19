@@ -13,4 +13,8 @@
 <div class="portfolio_dateadd">
 Дата добавления: <%= @job.created_at.strftime("%d.%m.%Y") %>
 </div>
+<div class="job_navigation">
+  <%= link_to 'Предыдущая', job_path(prev_job)%> | 
+  <%= link_to 'Следующая', job_path(next_job) %>
+</div>
 </div>

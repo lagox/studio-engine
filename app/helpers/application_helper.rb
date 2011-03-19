@@ -20,4 +20,5 @@ module ApplicationHelper
     url_count = url.size.to_i
     url.slice(7..url_count)
   end
+
 end

@@ -17,8 +17,8 @@ class Ourportfolio < ActiveRecord::Base
   validates_attachment_content_type :screen, :content_type => ['image/jpeg', 'image/png', 'image/gif']
   
 
-  
   #paginate
   cattr_reader :per_page
   @@per_page = 6
+  
 end
