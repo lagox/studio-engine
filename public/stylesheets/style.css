@@ -336,3 +336,22 @@ h1{
 .admin_profile{
     padding:20px;
 }
+.job_pag{
+    clear:both;
+    padding-top:20px;
+    text-align:center;
+    margin-bottom:10px;
+}
+.job_pag a{
+    color:#585858;
+    padding:2px 15px 2px 15px;
+    background:#C9C9C9;
+    font-weight:bold;
+    text-decoration:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.job_pag a:hover{
+    color:#fff;
+}
