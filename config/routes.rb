@@ -8,8 +8,6 @@ Studio::Application.routes.draw do
     delete 'logout' => :destroy
   end
 
-  resources :users
-
   #projects
   match "projects/page/:page" => "projects#index"
   resources :projects, :only => [:index, :show]
@@ -24,6 +22,7 @@ Studio::Application.routes.draw do
   #resources
   resources :ourprojects
   resources :ourportfolios
+  resources :users
   
   #404
   match '*a', :to => 'errors#routing'
@@ -84,4 +83,5 @@ Studio::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+
 end
