@@ -13,7 +13,6 @@
   <% unless @job.id == Ourportfolio.first.id %>
     <%= link_to raw('&larr;'), job_path(prev_job)%>  
   <% end %>
-  
   <% unless @job.id  == Ourportfolio.last.id %>
     <%= link_to raw("&rarr;"), job_path(next_job) %>
   <% end %>

@@ -8,7 +8,7 @@ class JobsController < ApplicationController
       format.xml  { render :xml => @jobs }
     end    
   end
-
+  
   def show
     begin
       @job = Ourportfolio.find(params[:id])
@@ -22,5 +22,5 @@ class JobsController < ApplicationController
       redirect_to jobs_path
     end
   end
-
+  
 end

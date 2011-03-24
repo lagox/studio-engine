@@ -15,7 +15,7 @@ Studio::Application.routes.draw do
   #jobs
   match "jobs/page/:page" => "jobs#index"
   resources :jobs, :only => [:index, :show]
-  
+
   #pages
   match "contacts" => "pages#contacts"
   
