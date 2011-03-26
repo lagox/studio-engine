@@ -9,10 +9,10 @@ set :repository,  "git://github.com/lagox/studio-engine.git"
 
 dpath = "/home/hosting_lagox/projects/remeli"
 
+set :rails_env, 'production'
 set :user, "hosting_lagox"
 set :use_sudo, false
 set :deploy_to, dpath
-
 set :scm, :git
 
 role :web, "lithium.locum.ru"                          # Your HTTP server, Apache/etc
