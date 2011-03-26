@@ -98,6 +98,13 @@ quotes: "" "";
     font-size:14px;
     line-height:1.5em;
 }
+.page_index{
+    color:#717171;
+    text-align: justify;
+    font-size:24px;
+    font-family:Tahoma;
+    line-height:1.5em;
+}
 #footer{
     height:60px;
 }
