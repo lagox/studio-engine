@@ -10,8 +10,6 @@ set :repository,  "git://github.com/lagox/studio-engine.git"
 dpath = "/home/hosting_lagox/projects/remeli"
 
 set :user, "hosting_lagox"
-set :rack_env, 'production'
-set :rails_env, 'production'
 set :use_sudo, false
 set :deploy_to, dpath
 
