@@ -5,7 +5,7 @@ class Ourportfolio < ActiveRecord::Base
   
   #url_format
   url_format = /^http:\/\/\w*/
-  validates :title, :url, :desc, :presence => { :message => " - поле не заполнено!" }
+  validates :title, :desc, :presence => { :message => " - поле не заполнено!" }
   validates :url, :format => { :with => url_format, :message => " - Вы ввели url без http://"}
 
   #paperclip screen
