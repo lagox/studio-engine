@@ -13,7 +13,6 @@ set :user, "hosting_lagox"
 set :rack_env, 'production'
 set :use_sudo, false
 set :deploy_to, dpath
-set :rails_env, 'production'
 set :scm, :git
 
 role :web, "lithium.locum.ru"                          # Your HTTP server, Apache/etc
