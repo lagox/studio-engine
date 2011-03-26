@@ -6,10 +6,10 @@
 
 set :application, "remeli"
 set :repository,  "git://github.com/lagox/studio-engine.git"
-
+set :rake, "/var/lib/gems/1.8/bin/rake"
+set :rails_env, "production"
 dpath = "/home/hosting_lagox/projects/remeli"
 
-set :rails_env, 'production'
 set :user, "hosting_lagox"
 set :use_sudo, false
 set :deploy_to, dpath
