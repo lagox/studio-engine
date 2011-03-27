@@ -8,6 +8,11 @@ Studio::Application.routes.draw do
     delete 'logout' => :destroy
   end
 
+  #resources
+  resources :ourprojects
+  resources :ourportfolios
+  resources :users
+
   #projects
   match "projects/page/:page" => "projects#index"
   resources :projects, :only => [:index, :show]
@@ -18,11 +23,6 @@ Studio::Application.routes.draw do
 
   #pages
   match "contacts" => "pages#contacts"
-  
-  #resources
-  resources :ourprojects
-  resources :ourportfolios
-  resources :users
   
   #404
   match '*a', :to => 'errors#routing'
