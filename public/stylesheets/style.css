@@ -101,9 +101,13 @@ quotes: "" "";
 .page_index{
     color:#717171;
     text-align: justify;
-    font-size:24px;
-    font-family:Tahoma;
-    line-height:1.5em;
+    font-size:18px;
+    font-family:Helvetica, Arial, sans-serif;
+    line-height:1.4em;
+}
+.page_index ul li{
+    list-style:square;
+    margin-left:30px;
 }
 #footer{
     height:60px;
@@ -361,4 +365,18 @@ h1{
 }
 .job_pag a:hover{
     color:#fff;
+}
+#date_now{
+    font-size:11px;
+    text-align:center;
+    margin:25px 0px 0px 10px;
+    font-family:Tahoma,Helvetica, sans-serif;
+    color:#585858;
+}
+.contacts{
+    color:#717171;
+    text-align: justify;
+    font-size:15px;
+    font-family:Helvetica, Arial, sans-serif;
+    line-height:1.4em;
 }

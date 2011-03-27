@@ -6,8 +6,12 @@
 
 set :application, "remeli"
 set :repository,  "git://github.com/lagox/studio-engine.git"
+
+#migrate
 set :rake, "/var/lib/gems/1.8/bin/rake"
 set :rails_env, "production"
+#end migrate
+
 dpath = "/home/hosting_lagox/projects/remeli"
 
 set :user, "hosting_lagox"
