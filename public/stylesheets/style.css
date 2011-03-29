@@ -98,17 +98,6 @@ quotes: "" "";
     font-size:14px;
     line-height:1.5em;
 }
-.page_index{
-    color:#717171;
-    text-align: justify;
-    font-size:18px;
-    font-family:Helvetica, Arial, sans-serif;
-    line-height:1.4em;
-}
-.page_index ul li{
-    list-style:square;
-    margin-left:30px;
-}
 #footer{
     height:60px;
 }
@@ -366,17 +355,45 @@ h1{
 .job_pag a:hover{
     color:#fff;
 }
-#date_now{
-    font-size:11px;
-    text-align:center;
-    margin:25px 0px 0px 10px;
-    font-family:Tahoma,Helvetica, sans-serif;
-    color:#585858;
-}
 .contacts{
     color:#717171;
     text-align: justify;
     font-size:15px;
     font-family:Helvetica, Arial, sans-serif;
     line-height:1.4em;
+}
+#date_now{
+    font-size:11px;
+    text-align:center;
+    margin:25px 0px 0px 10px;
+    font-family:Tahoma,Helvetica, sans-serif;
+    color:#585858;
+    clear:both;
+}
+.page_index{
+    color:#717171;
+    text-align: justify;
+    font-size:18px;
+    font-family:Helvetica, Arial, sans-serif;
+    line-height:1.4em;
+}
+.page_index ul li{
+    list-style:square;
+    margin-left:30px;
+}
+.page_index_block{
+    float:left;
+    width: 33%;
+    height:100%;
+    margin-bottom:15px;
+}
+.page_index_block h1{
+        text-align:center;
+}
+.page_index_content{
+    text-align:justify;
+    font-size:11px;
+    font-family:Arial,Tahoma,sans-serif;
+    line-height:1.3em;
+    padding:10px;
 }
