@@ -23,6 +23,7 @@ Studio::Application.routes.draw do
 
   #pages
   match "contacts" => "pages#contacts"
+  match "supportprice" => "pages#support_price"
   
   #404
   match '*a', :to => 'errors#routing'
