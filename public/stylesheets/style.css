@@ -381,21 +381,4 @@ h1{
     list-style:square;
     margin-left:30px;
 }
-.page_index_block{
-    float:left;
-    width: 33%;
-    height:100%;
-    margin-bottom:15px;
-}
-.page_index_block h1{
-    text-align:center;
-}
-.page_index_content{
-    text-align:justify;
-    font-size:11px;
-    font-family:Arial,Tahoma,sans-serif;
-    line-height:1.3em;
-    padding:10px;
-}
-
 
