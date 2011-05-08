@@ -8,7 +8,4 @@ class PagesController < ApplicationController
     @title = "Контакты"
   end
   
-  def support_price
-    @title = "Поддержка сайта. Цены на услуги"
-  end
 end
