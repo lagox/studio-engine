@@ -9,7 +9,7 @@ class Ourportfolio < ActiveRecord::Base
   #validates :url, :format => { :with => url_format, :message => " - Вы ввели url без http://"}
 
   #paperclip screen
-  has_attached_file :screen, :styles => { :medium => "670x810#", :thumb => "200x178#" },
+  has_attached_file :screen, :styles => { :thumb => "200x178>", :medium => "670x810>" },
                     :url => "/system/:attachment/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
   validates_attachment_presence :screen
