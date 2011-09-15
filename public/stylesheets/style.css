@@ -23,7 +23,7 @@ outline: 0;
 body {
 line-height: 1;
 color: #ccc;
-background: black;
+background: #fff;
 }
 ol, ul {
 list-style: none;
@@ -149,8 +149,8 @@ h1{
     border-radius:5px;
 }
 #projecth1{
-    color:#ccc;
-    background:#6D6D6D;
+    color:#fff;
+    background:#ccc;
     font-size:18px;
     margin:0px auto 30px auto;
     padding:5px;
@@ -383,7 +383,6 @@ h1{
 }
 #bruce{
   text-align:center;
-  margin-top:10px;
   margin-bottom:20px;
 }
 .text_about{
@@ -392,8 +391,8 @@ h1{
 .text_about p{
   margin-top:10px;
   font-size:16px;
-  color: #ccc;
+  color: #000;
 }
 .text_about a{
-  color: #ccc;
+  color: #000;
 }
