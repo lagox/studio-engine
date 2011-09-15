@@ -12,8 +12,8 @@ development:
   database: studio_development
   pool: 5
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  password: 'secretpassword'
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,18 +22,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: studio_test
+  database: reviews_test
   pool: 5
   username: root
   password:
-  socket: /var/run/mysqld/mysqld.sock
+  host: localhost
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: studio_production
+  database: reviews_production
   pool: 5
   username: root
   password:
-  socket: /var/run/mysqld/mysqld.sock
+  host: localhost

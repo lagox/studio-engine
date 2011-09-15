@@ -22,8 +22,8 @@ outline: 0;
 }
 body {
 line-height: 1;
-color: black;
-background: white;
+color: #ccc;
+background: black;
 }
 ol, ul {
 list-style: none;
@@ -149,8 +149,8 @@ h1{
     border-radius:5px;
 }
 #projecth1{
-    color:#ffffff;
-    background:#C9C9C9;
+    color:#ccc;
+    background:#6D6D6D;
     font-size:18px;
     margin:0px auto 30px auto;
     padding:5px;
@@ -381,4 +381,19 @@ h1{
     list-style:square;
     margin-left:30px;
 }
-
+#bruce{
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+.text_about{
+  text-align:center;
+}
+.text_about p{
+  margin-top:10px;
+  font-size:16px;
+  color: #ccc;
+}
+.text_about a{
+  color: #ccc;
+}
