@@ -396,3 +396,6 @@ h1{
 .text_about a{
   color: #000;
 }
+#presentation a{
+  text-decoration:none;
+}
